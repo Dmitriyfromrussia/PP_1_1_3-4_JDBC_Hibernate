@@ -11,19 +11,19 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
 
-        UserService userDao = new UserServiceImpl();
+        UserService action = new UserServiceImpl();
 
-        userDao.createUsersTable();
+        action.createUsersTable();
 
-        userDao.saveUser("Zaur", "Tregulov", (byte) 28);
-        userDao.saveUser("Студент", "Kata", (byte) 37);
-        userDao.saveUser("Dmitriy", "Belousov", (byte) 37);
-        userDao.saveUser("Olga", "Princess", (byte) 29);
+        action.saveUser("Zaur", "Tregulov", (byte) 28);
+        action.saveUser("Студент", "Kata", (byte) 37);
+        action.saveUser("Dmitriy", "Belousov", (byte) 37);
+        action.saveUser("Olga", "Princess", (byte) 29);
 
-        List<User> allUsersList = userDao.getAllUsers();
+        List<User> allUsersList = action.getAllUsers();
         System.out.println(allUsersList.toString());
 
-        userDao.cleanUsersTable();
-        userDao.dropUsersTable();
+        action.cleanUsersTable();
+        action.dropUsersTable();
     }
 }

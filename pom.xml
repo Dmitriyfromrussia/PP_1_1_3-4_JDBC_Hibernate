@@ -20,6 +20,10 @@
         </plugins>
     </build>
 
+    <properties> <!--'этоя я добавил во вторую задачу'-->
+        <hibernate-version>5.0.1.Final</hibernate-version>
+    </properties>
+
     <dependencies>
 <!--         Ваши зависимости-->
          <!-- https://mvnrepository.com/artifact/junit/junit -->
