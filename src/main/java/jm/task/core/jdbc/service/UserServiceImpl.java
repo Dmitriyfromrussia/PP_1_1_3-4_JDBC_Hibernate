@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void removeUserById(long id) throws SQLException {
+    public void removeUserById(long id) throws {
         userDao.removeUserById(id);
     }
 
