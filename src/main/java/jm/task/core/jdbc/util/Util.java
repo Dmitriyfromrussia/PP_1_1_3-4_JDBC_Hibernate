@@ -1,4 +1,4 @@
-package jm.task.core.jdbc.util; //новый коммит
+package jm.task.core.jdbc.util;// тест
 
 
 import java.sql.Connection;
