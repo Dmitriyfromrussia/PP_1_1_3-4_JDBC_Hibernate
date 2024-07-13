@@ -21,9 +21,10 @@ public class UserDaoJDBCImpl implements UserDao {
     public void createUsersTable() {
         try (Connection connection = getConnection();
              Statement statement = connection.createStatement()) {
-            statement.execute("CREATE TABLE IF NOT EXISTS users (id int auto_increment primary key, " + "name varchar(25) null, lastName varchar(25) null, age smallint null) engine InnoDB");
+            statement.execute("CREATE TABLE IF NOT EXISTS users (id int auto_increment primary key, " +
+                    "name varchar(25) null, lastName varchar(25) null, age smallint null) engine InnoDB");
         } catch (SQLException e) {
-            System.out.println("Ошибка при вызове метода createUsersTable");
+            System.out.println("Ошибка метода createUsersTable()");
             e.printStackTrace();
         }
     }
@@ -33,7 +34,8 @@ public class UserDaoJDBCImpl implements UserDao {
         try (final Connection connection = getConnection(); Statement statement = connection.createStatement()) {
             statement.execute("DROP TABLE IF EXISTS users");
         } catch (SQLException e) {
-            throw new RuntimeException();
+            System.out.println("Ошибка метода dropUsersTable()");
+            e.printStackTrace();
         }
     }
 
@@ -92,12 +94,14 @@ public class UserDaoJDBCImpl implements UserDao {
             ResultSet resultSet = statement.executeQuery(sqlRequest);
 
             while (resultSet.next()) {
-                User user = new User(resultSet.getString("name"), resultSet.getString("lastName"), resultSet.getByte("age"));
+                User user = new User(resultSet.getString("name"), resultSet.getString("lastName"),
+                        resultSet.getByte("age"));
                 user.setId(resultSet.getLong("id"));
                 allUsersList.add(user);
             }
         } catch (SQLException e) {
-            e.printStackTrace(); //либо throw new RuntimeException(e), прошу ментора сообщить как правильнее
+            System.out.println("Ошибка метода getAllUsers()");
+            e.printStackTrace();
         }
         return allUsersList;
     }

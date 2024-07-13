@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159f9d58-caa5-439a-8fbd-03c4775148a2" name="Changes" comment="это надо удалить" />
+    <list default="true" id="159f9d58-caa5-439a-8fbd-03c4775148a2" name="Changes" comment="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям).">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/89e9952c-956e-4afb-92e1-10ac2d712110.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/89e9952c-956e-4afb-92e1-10ac2d712110.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +50,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.6402299&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
@@ -153,6 +161,7 @@
       <workItem from="1720615944660" duration="3162000" />
       <workItem from="1720793414770" duration="14838000" />
       <workItem from="1720818594528" duration="687000" />
+      <workItem from="1720878782080" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="1.1.4 done">
       <option name="closed" value="true" />
@@ -218,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720818740335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям).">
+      <option name="closed" value="true" />
+      <created>1720829198773</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720829198773</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,74 +257,75 @@
     <MESSAGE value="1.1.4 done" />
     <MESSAGE value="1.1.4 работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным комментариям" />
     <MESSAGE value="это надо удалить" />
-    <option name="LAST_COMMIT_MESSAGE" value="это надо удалить" />
+    <MESSAGE value="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям)." />
+    <option name="LAST_COMMIT_MESSAGE" value="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>53</line>
+          <line>54</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>52</line>
+          <line>53</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>73</line>
+          <line>74</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>74</line>
+          <line>75</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
