@@ -1,0 +1,43 @@
+Index: src/main/java/jm/task/core/jdbc/util/Util.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package jm.task.core.jdbc.util;\n\n\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.SQLException;\n\npublic class Util {\n\n    private Util() {\n    }\n\n    private static final String DB_URL = \"jdbc:mysql://localhost:3306/mydbtest\";\n    private static final String DB_USER = \"root\";\n    private static final String DB_PASSWORD = \"root\";\n\n    public static Connection getConnection() {\n        Connection connection;\n        try {\n            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);\n        } catch (SQLException e) {\n            System.out.println(\"Failed to connect to database\");\n            throw new RuntimeException(e);\n        }\n        return connection;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/jm/task/core/jdbc/util/Util.java b/src/main/java/jm/task/core/jdbc/util/Util.java
+--- a/src/main/java/jm/task/core/jdbc/util/Util.java	(revision 42a999123da0de5905e93dbba028fe73a6b12001)
++++ b/src/main/java/jm/task/core/jdbc/util/Util.java	(date 1720816770997)
+@@ -1,4 +1,4 @@
+-package jm.task.core.jdbc.util;
++package jm.task.core.jdbc.util; //новый коммит
+ 
+ 
+ import java.sql.Connection;
+Index: src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package jm.task.core.jdbc.service;\n\nimport jm.task.core.jdbc.dao.UserDao;\nimport jm.task.core.jdbc.dao.UserDaoJDBCImpl;\nimport jm.task.core.jdbc.model.User;\n\nimport java.sql.SQLException;\nimport java.util.List;\n\npublic class UserServiceImpl implements UserService {\n    private final UserDao userDao = new UserDaoJDBCImpl();\n\n    @Override\n    public void createUsersTable() {\n        userDao.createUsersTable();\n    }\n\n    @Override\n    public void dropUsersTable() {\n        userDao.dropUsersTable();\n    }\n\n    @Override\n    public void saveUser(String name, String lastName, byte age) {\n        userDao.saveUser(name, lastName, age);\n        System.out.println(\"User с именем – \" + name + \" добавлен в базу данных\");\n    }\n\n    @Override\n    public void removeUserById(long id) throws {\n        userDao.removeUserById(id);\n    }\n\n    @Override\n    public List<User> getAllUsers() {\n        return userDao.getAllUsers();\n    }\n\n    @Override\n    public void cleanUsersTable() {\n        userDao.cleanUsersTable();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java b/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java
+--- a/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java	(revision 42a999123da0de5905e93dbba028fe73a6b12001)
++++ b/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java	(date 1720814963948)
+@@ -4,7 +4,6 @@
+ import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
+ import jm.task.core.jdbc.model.User;
+ 
+-import java.sql.SQLException;
+ import java.util.List;
+ 
+ public class UserServiceImpl implements UserService {
+@@ -27,7 +26,7 @@
+     }
+ 
+     @Override
+-    public void removeUserById(long id) throws {
++    public void removeUserById(long id) {
+         userDao.removeUserById(id);
+     }
+ 
