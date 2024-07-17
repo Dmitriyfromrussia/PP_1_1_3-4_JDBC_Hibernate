@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159f9d58-caa5-439a-8fbd-03c4775148a2" name="Changes" comment="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям).">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/89e9952c-956e-4afb-92e1-10ac2d712110.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/89e9952c-956e-4afb-92e1-10ac2d712110.xml" afterDir="false" />
+    <list default="true" id="159f9d58-caa5-439a-8fbd-03c4775148a2" name="Changes" comment="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу.">
+      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/easycode/codebase-v2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskJDBC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +22,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1.1.5" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
@@ -33,39 +42,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.cleanUsersTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.createUsersTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.dropUsersTable.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.getAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.removeUserById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.saveUser.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.6402299&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.UserServiceTest.cleanUsersTable.executor": "Run",
+    "JUnit.UserServiceTest.createUsersTable.executor": "Run",
+    "JUnit.UserServiceTest.dropUsersTable.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.getAllUsers.executor": "Run",
+    "JUnit.UserServiceTest.removeUserById.executor": "Run",
+    "JUnit.UserServiceTest.saveUser.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3704053",
+    "settings.editor.selected.configurable": "com.obiscr.chatgpt.settings.GPT3-3.5-Turbo",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
-}</component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="TaskJDBC" />
@@ -120,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
         <item itemvalue="JUnit.UserServiceTest.removeUserById" />
@@ -161,7 +171,17 @@
       <workItem from="1720615944660" duration="3162000" />
       <workItem from="1720793414770" duration="14838000" />
       <workItem from="1720818594528" duration="687000" />
-      <workItem from="1720878782080" duration="1005000" />
+      <workItem from="1720878782080" duration="1441000" />
+      <workItem from="1720886353082" duration="684000" />
+      <workItem from="1720911815176" duration="850000" />
+      <workItem from="1720912676324" duration="1248000" />
+      <workItem from="1720980687573" duration="19000" />
+      <workItem from="1720985412588" duration="628000" />
+      <workItem from="1720987125197" duration="401000" />
+      <workItem from="1721042143717" duration="469000" />
+      <workItem from="1721043806764" duration="1773000" />
+      <workItem from="1721047972216" duration="200000" />
+      <workItem from="1721148219263" duration="29268000" />
     </task>
     <task id="LOCAL-00001" summary="1.1.4 done">
       <option name="closed" value="true" />
@@ -235,18 +255,77 @@
       <option name="project" value="LOCAL" />
       <updated>1720829198773</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям).">
+      <option name="closed" value="true" />
+      <created>1720879865170</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720879865170</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу.">
+      <option name="closed" value="true" />
+      <created>1721225794216</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721225794216</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу.">
+      <option name="closed" value="true" />
+      <created>1721225858732</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721225858732</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу.">
+      <option name="closed" value="true" />
+      <created>1721226073700</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721226073700</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="1.1.5" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="1.1.5" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -258,7 +337,8 @@
     <MESSAGE value="1.1.4 работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным комментариям" />
     <MESSAGE value="это надо удалить" />
     <MESSAGE value="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям)." />
-    <option name="LAST_COMMIT_MESSAGE" value="работа над замечаниями ментора (все замечания по существу, благодарю за внимание к сделанным мной комментариям)." />
+    <MESSAGE value="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал вторую часть задачи. Частично устранил замечания по первой части. Одним из замечаний было, что вложенные try в try caсh с ресурсами лишние. Строку 79 класса UserDaoJDBCImpl.java не получается скомпилировать без вложенного блока try. Прошу сделать замечание по этому вопросу." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

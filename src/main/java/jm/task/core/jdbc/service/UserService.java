@@ -18,3 +18,5 @@ public interface UserService {
 
     void cleanUsersTable() throws SQLException;
 }
+//UserDao userDaoHibernate = new UserDaoHibernateImpl();
+//создаем объект класса UserDaoHibernateImpl для вызова методов UserDaoJDBCImpl

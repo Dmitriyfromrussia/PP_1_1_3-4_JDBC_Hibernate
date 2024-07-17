@@ -31,7 +31,8 @@ public class UserDaoJDBCImpl implements UserDao {
 
     @Override
     public void dropUsersTable() {
-        try (final Connection connection = getConnection(); Statement statement = connection.createStatement()) {
+        try (final Connection connection = getConnection();
+             Statement statement = connection.createStatement()) {
             statement.execute("DROP TABLE IF EXISTS users");
         } catch (SQLException e) {
             System.out.println("Ошибка метода dropUsersTable()");
@@ -64,6 +65,22 @@ public class UserDaoJDBCImpl implements UserDao {
         }
     }
 
+//    @Override
+//    public void removeUserById(long id) { //
+//        String sqlRequest = "DELETE FROM users WHERE id = ?";
+//        //Connection connection = null;
+//        try (Connection connection = getConnection(); // можно написать final Connection..
+//             PreparedStatement preparedStatement = connection.prepareStatement(sqlRequest)) {
+//            connection.setAutoCommit(false);
+//            preparedStatement.setLong(1, id);
+//            preparedStatement.execute();
+//            connection.commit();
+//        } catch (SQLException e) {
+//            connection.rollback(); // эта строку не получается скомпилировать
+//            System.out.println("при удалении пользователя с id: " + id + " в методе removeUserById возникла ошибка");
+//            e.printStackTrace();
+//        }
+//    }
     @Override
     public void removeUserById(long id) { //черновик
         String sqlRequest = "DELETE FROM users WHERE id = ?";
@@ -92,7 +109,6 @@ public class UserDaoJDBCImpl implements UserDao {
         String sqlRequest = "SELECT id, name, lastname, age FROM users";
         try (Connection connection = getConnection(); Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(sqlRequest);
-
             while (resultSet.next()) {
                 User user = new User(resultSet.getString("name"), resultSet.getString("lastName"),
                         resultSet.getByte("age"));
@@ -108,17 +124,13 @@ public class UserDaoJDBCImpl implements UserDao {
 
     @Override
     public void cleanUsersTable() {
-        try (Connection connection = getConnection()) {
+        try (Connection connection = getConnection();
+             Statement statement = connection.createStatement()) {
             connection.setAutoCommit(false);
-            try (Statement statement = connection.createStatement()) {
-                statement.executeUpdate("DELETE FROM users");
-                connection.commit();
-            } catch (SQLException e) {
-                System.out.println("В методе cleanUsersTable возникла ошибка");
-                e.printStackTrace();
-            }
+            statement.executeUpdate("DELETE FROM users");
+            connection.commit();
         } catch (SQLException e) {
-            System.out.println("В методе cleanUsersTable при вызове метода getConnection возникла ошибка");
+            System.out.println("Ошибка метода cleanUsersTable");
             e.printStackTrace();
         }
     }
